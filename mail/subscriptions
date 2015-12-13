@@ -1,0 +1,4 @@
+<?php
+	$subscription_email = $POST_["subemail"];
+	insert into emails (subscriber_email) value ($subcription_email);
+?>

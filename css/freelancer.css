@@ -1,0 +1,198 @@
+/*Author: Zakhanya Systems(N Zulu);
+ *Description: General css for the website;
+ *Date: 25th November 2015;
+ */
+body {
+    font-family: 'Overlock', 'cursive';
+}
+
+.navbar {
+    min-height: 80px;
+    box-shadow: 0 2px 5px #031313;
+    font-family: 'Overlock', 'cursive';
+    font-size: 18px;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.3), 0px -1px 0px rgba(0,0,0,0.7); 
+    text-transform: uppercase;
+    margin-bottom: -63px;
+}
+
+.navbar-inverse {
+    background-color: #073563;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #080808;
+}
+
+#myNavbar {
+    padding-top: 10px;
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: #22222;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+#subscribe {
+    color: black;
+    font-weight: bolder;
+
+}
+
+.headers {
+    height: 50px;
+    width: 100%;
+    background-color: green;
+}
+
+header {
+    background: url('../img/water.jpg');
+    height:100%;
+}
+
+h2,h3,h4,p{
+  font-family: 'Overlock', 'cursive';
+  color: white;
+}
+
+.navbar-nav{
+  margin-right: 252px;
+  float: right;
+}
+
+header img{
+  border: solid 1px white;
+  border-radius: 80px;
+  padding: 20px;
+  transition: 0.25s ease-out
+}
+
+header img:hover{
+  box-shadow: 5px 5px 5px #000; 
+  border-color: black;
+  cursor: pointer;
+}
+
+#services{
+  background: url('../img/start.png');
+  background-color: #0F262D;
+  height: 100%;
+}
+
+#about{
+  background-color: #053E61;
+  height:100%;
+}
+
+#contact{
+  background-color: #1A242F;
+}
+
+a{
+  text-decoration: none;
+}
+
+#navigation li a{
+  padding-left: 70px;
+}
+
+#navigation a:hover{
+  text-shadow: 0px 1px 0px rgba(255,255,255,0.3), 0px -1px 0px rgba(0,0,0,0.7); 
+  cursor: pointer;
+  text-decoration: none;
+  color: #3498DB;
+}
+
+#navigation li.active > a:active,a:focus{
+  background: none;
+  background-color: none;
+  color: #b3ffff;
+}
+
+#about img{
+  border-radius: 200px;
+}
+
+.form-control{
+  border-radius: 20px;
+}
+
+#navigation .active{
+  background-color: none;
+}
+
+#myform, #subform{
+  color: red;
+}
+
+.thanks h4{
+  color: green;
+}
+
+footer{
+  background-color: black;
+  color: white;
+}
+
+/*Media Queries*/
+
+@media (max-width:1000px) {
+    .navbar-fixed-top {
+        position:static;
+    }
+}
+
+@media (max-width: 1000px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 21px;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+@media (max-width: 1000px) {
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+  }
+}
+
+@media (max-width: 1200px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
